@@ -1,0 +1,4 @@
+<p>a paragraph<p> GOOD
+<p><em>words, words, wrods.</em></p> GOOD
+<span...middle of the sentence...</span> ERROR
+<p><em>words, words, wrods.</p></em> ERROR

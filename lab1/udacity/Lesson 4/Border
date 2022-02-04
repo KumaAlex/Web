@@ -1,0 +1,5 @@
+none solid dashed dotted double groove ridge inset outset hidden
+
+.kitten-image {
+  /* add CSS here */
+}
