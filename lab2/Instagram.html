@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body {
+                background-color: whitesmoke;
+            }
+            .del_bor {
+                border: 0px;
+                margin: 0px 30px 0px 30px;
+            }
+            #del_bor2 {
+                margin: 18px 3px 18px 3px;
+            }
+            #form {
+                position: absolute;
+                top: 80px;
+                left: 780px;
+                border: 1px solid rgb(179, 175, 175);
+                background-color: white;
+            }
+            #form2 {
+                position: absolute;
+                left: 778px;
+                top: 446px;
+            }
+            .sign_in {
+                border-radius: 5px;
+                width: 255px;
+                height: 30px;
+            }
+            #phones {
+                position: absolute;
+                top: 40px;
+                left: 350px;
+            }
+            #submit {
+                border-radius: 5px;
+                background-color: rgba(0, 89, 255, 0.842);
+                color: aliceblue;
+                width: 263px;
+                height: 32px;
+            }
+            #or {
+                text-align: center;
+                margin-top: 0px;
+            }
+            .dash {
+                position: absolute;
+                top: 312px;
+                z-index: 1;
+            }
+            #left_dash {
+                left: 826px;
+            }
+            #rig_dash {
+                left: 980px;
+            }
+            #facebook {
+                position: absolute;
+                top: 368px;
+                left: 870px;
+                z-index: 1;
+            }
+            #sign2 {
+                color: rgb(68, 0, 255);
+                margin-left: 66px;
+                border: 0px;
+                background-color: white;
+            }
+            #forgot_pas {
+                border: 0px;
+                text-align: center;
+                margin-left: 74px;
+                background-color: white;
+            }
+            .underline_none {
+                text-decoration: none;
+            }
+            #inst_png {
+                width: 200px;
+                margin-top: 10px;
+                margin-left: 26px;
+            }
+            #setup {
+                position: absolute;
+                left: 814px;
+                top: 520px;
+            }
+            #setup_txt {
+                margin-left: 50px;
+            }
+            #under {
+                position: absolute;
+                text-align: center;
+                font-size: 88%;
+                top: 660px;
+                left: 370px;
+            }
+            .phone_pic {
+                position: absolute;
+                width: 238px;
+                top: 133px;
+                left: 494px;
+                overflow: hidden;
+                animation: slideanim 25s infinite;
+                z-index: 1;
+                opacity: 0;
+            }
+            #p1{
+                animation-delay:0s;
+            }
+            #p2{
+                animation-delay:5s;
+            }
+            #p3{
+                animation-delay:10s;
+            }
+            #p4{
+                animation-delay:15s;
+            }
+            #p5{
+                animation-delay:20s;
+            }
+            @keyframes slideanim {
+                15%{opacity: 1}
+                35%{opacity: 0}
+            }
+            .dec_none {
+                text-decoration: none;
+                margin-right: 12px;
+                color: gray;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="p1.png" class="phone_pic" id="p1">
+        <img src="p2.png" class="phone_pic" id="p2">
+        <img src="p3.png" class="phone_pic" id="p3">
+        <img src="p4.png" class="phone_pic" id="p4">
+        <img src="p5.png" class="phone_pic" id="p5">
+
+        <img id="phones" src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png" alt="phones" width="440px">
+        <form id="form">
+            <fieldset class="del_bor">
+                <img id="inst_png" src="inst.PNG">
+            </fieldset>
+            <fieldset class="del_bor">
+                <label for="Login"></label>
+                <input type="text" class="sign_in" placeholder="Телефон, имя пользователя или эл. адрес">
+            </fieldset>
+            <fieldset class="del_bor">
+                <label for="Password"></label>
+                <input type="password" class="sign_in" placeholder="Пароль">
+            </fieldset>
+            <fieldset class="del_bor">
+                <input type="submit" id="submit" value="Войти">
+            </fieldset>
+            <fieldset class="del_bor">
+                <p id="or">или</p>
+                <input type="submit" id="sign2" value="Войти через Facebook">
+            </fieldset>
+            <fieldset class="del_bor">
+                <input type="submit" id="forgot_pas" value="Забыли пароль?">
+            </fieldset>
+        </form>
+
+        <p class="dash" id="left_dash">_____________</p>
+        <p class="dash" id="rig_dash">_____________</p>
+        <img id="facebook" src="https://w7.pngwing.com/pngs/933/615/png-transparent-social-media-facebook-computer-icons-logo-facebook-blue-text-rectangle.png" alt="facebook" width="20px">
+    
+        <form id="form2">
+            <fieldset>
+                <p id="del_bor2">У вас ещё нет аккаунта? <a class="underline_none" href="https://www.instagram.com/accounts/emailsignup/" target="_blank"><strong>Зарегистрироваться</strong></a></p>
+            </fieldset>
+        </form>
+
+        <div id="setup">
+            <p id="setup_txt">Установите приложение.</p>
+            <a href="https://www.apple.com/ru/app-store/" target="_blank"><img src="appstore.png" alt="App Store" width="140px"></a>
+            <a href="https://play.google.com/store?hl=ru&gl=US" target="_blank"><img src="googleplay.PNG" alt="Google Play" width="140px"></a>
+        </div>
+
+        <p id="under">
+            <a href="" class="dec_none">Meta</a>
+            <a href="" class="dec_none">Информация</a>
+            <a href="" class="dec_none">Блог</a>
+            <a href="" class="dec_none">Вакансии</a>
+            <a href="" class="dec_none">Помощь</a>
+            <a href="" class="dec_none">API</a>
+            <a href="" class="dec_none">Конфиденциальность</a>
+            <a href="" class="dec_none">Условия</a>
+            <a href="" class="dec_none">Популярные аккаунты</a>
+            <a href="" class="dec_none">Хэштеги</a>
+            <a href="" class="dec_none">Места</a>
+            <a href="" class="dec_none">Instagram Lite</a><br>
+            <a href="" class="dec_none">Красота</a>
+            <a href="" class="dec_none">Танцы</a>
+            <a href="" class="dec_none">Фитнес</a>
+            <a href="" class="dec_none">Еда и напитки</a>
+            <a href="" class="dec_none">Дом и сад</a>
+            <a href="" class="dec_none">Музыка</a>
+            <a href="" class="dec_none">Изобразительное искусство</a><br><br>
+            <span class="dec_none">
+            Русский
+            © 2022 Instagram from Meta</span></p>
+    </body>
+</html>
